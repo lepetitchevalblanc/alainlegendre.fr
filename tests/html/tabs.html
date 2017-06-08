@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabs</title>
+    <link media="screen" type="text/css" href="../static/css/tabs_home.css" rel="stylesheet" />
+    <link media="all" type="text/css" href="../static/css/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/modernizr/3.3.1/modernizr.min.js"
+            integrity="sha256-65rhSmwPSQGe83K1p6cudTQxfiMNutuHCIB0n8CqvF4=" crossorigin="anonymous"></script>
+    <script type="application/javascript">
+        function loadJS(file, integrity = null, crossorigin = null, async=false) {
+            var jsElm = document.createElement("script");
+            jsElm.type = "application/javascript";
+            if (integrity !== null) {
+                jsElm.integrity = integrity;
+            }
+            if (crossorigin !== null) {
+                jsElm.crossorigin = crossorigin;
+            }
+            jsElm.src = file;
+            jsElm.async = async;
+            document.body.appendChild(jsElm);
+        }
+    </script>
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"
+                integrity="sha256-1eSvllkLdrfxD6G8RGF9h+mQuD93Af5+GdPBMNc7uMQ=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        if (!Modernizr.classlist) {
+            loadJS(
+                "https://cdn.jsdelivr.net/classlist/2014.01.31/classList.min.js",
+                integrity="sha256-VWQ0lq/ep+pscFn/n6pvdeBxVjhcRPjMYZJjDaM7+rk=",
+                crossorigin="anonymous"
+            );
+        }
+    </script>
+    <script type="text/javascript">
+        if (!Modernizr.queryselector) {
+            loadJS(
+
+            );
+        }
+    </script>
+    <script type="text/javascript">
+        if (!Modernizr.csstransforms) {
+            loadJS(
+                
+            );
+        }
+    </script>
+    <script type="text/javascript">
+        if (!Modernizr.csstransitions) {
+            loadJS();
+        }
+    </script>
+    <script type="text/javascript">
+        if (!Modernizr.dataset) {
+
+            <script src="https://gist.github.com/brettz9/4093766.js"></script>
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).load(function() {
+            $('div#tabs_headers>div').click(
+                function (evt) {
+                    var contentId = $(this).dataset.contentid;
+                    console.log(contenId);
+                    $('div.content_activated').classList.remove('content_activated');
+                    $('div#' + contentId).classList.add('content_activated');
+                }
+            );
+        });
+    </script>
+
+</head>
+<body>
+<section id="tabbed_content">
+    <div id="tabs_headers">
+        <div id="tab1_header" data-contentid="tab1_content">
+            <div class="tabs_inside">
+                <span class="title_4">Starting with the French Tax<br>System ?</span>
+                <br>You are not (yet) in touch with the French Tax Administration.
+            </div>
+        </div>
+        <div id="tab2_header" data-contentid="tab2_content">
+            <div class="tabs_inside">
+                <span class="title_4">Heard from the French Tax<br>Administration ?</span>
+                <br>You are already in touch with the French Tax Administration and you don’t know what should you next.
+            </div>
+        </div>
+        <div id="tab3_header" data-contentid="tab3_content">
+            <div class="tabs_inside">
+                <span class="title_4">Contesting the French Tax<br>Administration ?</span>
+                <br>You contest the tax you are asked to pay.
+            </div>
+        </div>
+    </div>
+    <div style="clear:both;"></div>
+    <div id="tab1">
+        <div id="tab1_content" class="content content_activated">
+            <span class="title_1">Starting with the French Tax System ?</span><br><br>You are not (yet) in touch with
+            the French Tax Administration.<br><br>
+            <div><img src="/repupload/upload-al/template/imagesalain/istock_83359081_large1-e1466079707384.jpg" alt=""
+                      class="image_border" style="margin-right: 10px;" width="250" border="0" align="left"><span
+                    class="sous_titre_1">Do you want to BUY
+a real estate or START a business in France ?<br></span></div>
+            <div>You are an
+                individual, entrepreneur or a real estate agent: you want to do your business
+                in France (real estate investment, start-up, relocation, for example), BUT you
+                do not know anything or not enough, about the French tax dimension laws, rules
+                and procedures.<br><br>
+                <div><br></div>
+                <div><br></div>
+                <div><br><br></div>
+                <br><img src="/repupload/upload-al/template/imagesalain/bureaucracy.jpg" alt="" class="image_border"
+                         style="margin-right: 10px;" width="250" border="0" align="left"><span class="sous_titre_1">Do
+you ANTICIPATE a situation, which may lead to any French taxation ?</span></div>
+            <div>For example, you
+                are concerned by the prospect of an inheritance or of your own estate because
+                of economic or family links you’re still keeping in France. Or you are planning
+                to restructure your property assets in France, to buy or sell an apartment or a
+                house.<br><br><br>
+                <div style="text-align: center;"><a href="../r/?id=1286" class="button_2">More</a></div>
+                <br><br>
+                <div style="text-align: center;"><br></div>
+            </div>
+            <div style="text-align: center;"><br></div>
+        </div>
+    </div>
+    <div id="tab2">
+        <div id="tab2_content" class="content">
+            <p style="text-align:justify;"><span class="sous_titre_1"><span class="title_1">Heard
+from the French Tax Administration ?</span></span></p>
+            <p style="text-align:justify;"><img src="/repupload/upload-al/template/imagesalain/464825547.jpg" alt=""
+                                                style="margin-bottom: 40px; margin-right: 10px;" class="image_border"
+                                                width="200" border="0" align="left"></p>
+            <div style="text-align: justify;">French Tax
+                Administration may simply send a letter, perhaps registered letter with return receipt (RAR), to the
+                taxpayer, requesting various private information,
+                sometimes with deadlines.&nbsp;</div>
+            <div style="text-align: justify;"><br></div>
+            <div style="text-align: justify;"><span style="text-decoration: underline;">Relating to
+local taxes</span>, such as housing tax (=“taxe d’habitation”, corporate real property tax (=“contribution foncière des
+                entreprises”), property tax (=“taxe sur les propriétés - bâties ou non
+                bâties”) :&nbsp;</div>
+            <div style="text-align: justify;"><br></div>
+            <div style="text-align: justify;"><span style="text-decoration: underline;">Real estate</span> In order to
+                determine the rental value of your house or apartment, the FAT
+                requires from you specifics, such as the details (floor area, surface “Carrez”&nbsp;law, ...), number of
+                bathroom, shower, and sanitation facilities, and/or if you
+                use part of your space for a professional activity (architect, designer,
+                start-up ...).&nbsp;</div>
+            <div style="text-align: justify;"><br></div>
+            <div style="text-align: justify;"><span style="text-decoration: underline;">Income Tax</span> About income
+                tax, the French Tax Administration might suddenly ask you to report some&nbsp;“alleged”&nbsp;income you
+                received in France -even though you don't think
+                you are a French resident and / or that your income would be exclusively US
+                sourced, or that you have ceased any professional activity. You could also
+                receive a&nbsp;“request for clarification”(=&nbsp;“demande d’éclaircissement” ou de “justification”).&nbsp;
+            </div>
+            <div style="text-align: justify;"><br></div>
+            <div style="text-align: justify;">Likewise, the
+                French Tax Administration may ask you about the composition of your assets to
+                determine whether you are subject to the solidarity tax on wealth (ISF), or
+                simply send you a notice to fill in a wealth tax return.<br></div>
+            <p style="text-align:justify;"><a href="../r/?id=1288" class="button_2">More</a><br><br><br><br><span
+                class="title_1">You are already or are about to be subject to a tax inspection</span><br></p>
+            <p style="text-align: justify;"><img src="/repupload/upload-al/template/imagesalain/impots.jpg"
+                                                 alt="" class="image_border" style="margin-bottom: 10px; margin-right: 10px;" width="200" border="0" align="left">You are already or
+            are about to be subject to a tax inspection (=“contrôle fiscal”):e.g.
+            document vérification (=“contrôle sur pieces”), audit of the accounting (=“vérification de
+            comptabilité”), contradictory examination of the
+            overall tax position of the individual (=“examen
+            contradictoire de la situation fiscale d’ensemble du particulier (=“ESFP”). &nbsp;</p>
+            <p style="text-align: justify; "><br></p>
+            <p style="text-align: justify; ">This contact is
+                often brutal. You want to respond carefully. Misguided or inadequate responses
+                can be very risky.&nbsp;&nbsp;</p>
+            <p style="text-align: justify; "><br></p>
+            <p style="text-align: justify; ">Alain Legendre
+                can advise and / or assist you in this tax action, according to the specifics
+                of your situation.</p>
+            <p style="text-align: justify; "><span class="orange" style="font-weight: bold;"><span
+                    style="color: rgb(0, 0, 0); font-size: 14px;"><span
+                    style="font-weight: bold;"><br><br></span></span></span></p>
+            <p style="text-align: justify; "><span class="orange" style="font-weight: bold;"><span
+                    style="color: rgb(255, 255, 255); font-size: 15px; font-weight: normal; text-align: center; background-color: rgb(224, 53, 15);"
+                    class="button_2">More</span></span></p>
+        </div>
+    </div>
+    <div id="tab3">
+        <div id="tab3_content" class="content">
+            <img src="/repupload/upload-al/template/imagesalain/547024986.jpg" alt=""
+                 style="margin-bottom: 10px; margin-right: 10px;" class="image_border" width="250" border="0"
+                 align="left"><span class="sous_titre_1"><span style="color: rgb(0, 0, 0);"><span class="title_1"><span
+                class="sous_titre_1">In France, tax litigation is complicated and cannot be improvised. </span></span></span></span>Tax
+            litigation must be thought of as a real war. <br>“<span style="font-style: italic;">Everything in war is very simple, but the simplest thing is difficult&nbsp;</span>”<span
+                style="font-style: italic;"> </span>(Carl von Clausewitz)<p></p>
+            <p></p><br>Alain Legendre has made it his specialty. He offers an experience of over 20 years of practice in
+            this area of dispute from the claim to the French Tax Administration up until the action before the Tax
+            Court.<br><br><br>
+            <div><a href="../r/?id=1287" class="button_2">Contact Alain Legendre</a></div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

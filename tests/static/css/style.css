@@ -1,0 +1,54 @@
+.tabbed-content	{
+	margin:0px;
+	padding:0px;
+	margin-left: auto;
+ 	margin-right: auto;
+	width:1160px;
+  	padding-top:20px;
+   	padding-bottom:20px;
+
+}
+
+@import 'https://fonts.googleapis.com/css?family=Playfair Display';
+
+.title_1{
+	font-size:29px;
+	color:#303030;
+}
+
+.title_2{
+	font-size:29px;
+	color:#6d6d6d;
+}
+
+.title_3{
+	font-size:29px;
+	color:#ef3910;
+}
+
+.title_4{
+	font-size:22px;
+	color:#303030;
+	display:block;
+	margin-top:10px;
+	margin-left:50px;
+	white-space: nowrap;
+}
+
+.orange{
+	color:#ef3910;
+}
+
+.sous_titre_1{
+	font-size:21px;
+	color:#303030;
+	display:block;
+	margin-bottom:15px;
+}
+
+.sous_titre_2{
+	font-size:21px;
+	color:#ef3910;
+	display:block;
+	margin-bottom:15px;
+}
